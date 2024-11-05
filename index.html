@@ -14,10 +14,110 @@
 
 <body>
 
+    <section class="header_container">
+        <!-- Top First Header -->
+        <div class="container top-header d-flex align-items-baseline justify-content-between flex-wrap">
+            <div class="converter d-flex align-items-baseline col-xl-4 col-lg-4 col-md-3 col-12">
+                <div id="google_translate_element"></div>
+                |
+                <div class="">
+                    <select name="" id="">
+                        <option value="usd">USD</option>
+                        <option value="eur">ERU</option>
+                    </select>
+                </div>
+            </div>
+            <div
+                class="social_links d-flex align-items-baseline justify-content-center col-xl-4 col-lg-4 col-md-4 col-12">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div
+                class="search_account d-flex align-items-baseline justify-content-end col-xl-4 col-lg-4 col-md-5 col-12">
+                <div class="searchDiv">
+                    <form action="" method="">
+                        <label for="search_icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        <input type="search" name="search" id="search_icon" placeholder="SEARCH..." />
+                    </form>
+                </div>
+                |
+                <div class="account">
+                    <select name="" id="">
+                        <option value="">My Account</option>
+                        <option value="">Wish List</option>
+                        <option value="">Checkout</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!-- Top Second Header -->
+        <div class="container second_header d-flex align-items-start justify-content-between">
+            <div class="col-xl-2 col-lg-2 col-4 logo-section">
+                <img src="../Autohaus_Geiger_Gmbh/assets/images/logo.png" alt="Autohaus Logo">
+            </div>
+            <div class="col-xl-9 col-lg-9 col-7 d-flex gap-2 align-items-start justify-content-end">
+                <div class="col-xl-7 col-lg-7 search-bar">
+                    <select name="" id="">
+                        <option>All Category</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                    </select>
+                    <input type="text" placeholder="Search item...">
+                    <button type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-xl-0 col-lg-0">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Third Header -->
+
+    </section>
+
 
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("touchstart", function () { }, true);
+    </script>
+    <!--New Google Transalater Code Start-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en,ur',
+                includedLanguages: 'en,ur',
+                autoDisplay: true
+            }, 'google_translate_element');
+
+            setTimeout(function () {
+                var select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = 'en,ur';
+                    select.dispatchEvent(new Event('change'));
+                }
+            }, 1000); // Delay to ensure the Translate element is fully loaded
+        }
+
+        function loadGoogleTranslate() {
+            var googleTranslateScript = document.createElement('script');
+            googleTranslateScript.type = 'text/javascript';
+            googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            document.head.appendChild(googleTranslateScript);
+        }
+
+        // Load Google Translate
+        loadGoogleTranslate();
+    </script>
+    <!--New Google Transalater Code End-->
 </body>
 
 </html>
