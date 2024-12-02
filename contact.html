@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autohaus Geiger</title>
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!-- Bottom To Top -->
+  <a id="button">
+    <img src="./assets/images/car.png" alt="Back To Top" />
+  </a>
+  <!-- Bottom To Top -->
+
+  <!-- Top Header & NavBar Starts -->
+  <section class="header_container">
+    <!-- Top First Header -->
+    <div class="first_nav">
+      <div class="container top-header d-flex align-items-baseline justify-content-between flex-wrap">
+        <div class="converter d-flex align-items-baseline col-xl-4 col-lg-4 col-md-3 col-12">
+          <div id="google_translate_element"></div>
+          |
+          <div class="">
+            <select name="" id="">
+              <option value="usd">USD</option>
+              <option value="eur">ERU</option>
+            </select>
+          </div>
+        </div>
+        <div class="social_links d-flex align-items-baseline justify-content-center col-xl-4 col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="search_account d-flex align-items-baseline justify-content-end col-xl-4 col-lg-4 col-md-5 col-12">
+          <div class="searchDiv">
+            <form action="" method="">
+              <label for="search_icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+              <input type="search" name="search" id="search_icon" placeholder="SEARCH..." />
+            </form>
+          </div>
+          |
+          <div class="account">
+            <select name="" id="">
+              <option value="">My Account</option>
+              <option value="">Wish List</option>
+              <option value="">Checkout</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="m-0 mb-3" />
+    <!-- Top Second Header -->
+    <div class="container mb-2 second_header d-flex align-items-start justify-content-between">
+      <div class="col-xl-2 col-lg-2 col-4 logo-section">
+        <img src="./assets/images/logo.png" alt="Autohaus Logo">
+      </div>
+      <div class="col-xl-9 col-lg-9 col-7 d-flex gap-2 align-items-start justify-content-end">
+        <div class="col-xl-7 col-lg-7 search-bar">
+          <select name="" id="">
+            <option>All Category</option>
+            <option>Category 1</option>
+            <option>Category 2</option>
+          </select>
+          <input type="text" placeholder="Search item...">
+          <button type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="col-xl-0 col-lg-0">
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Third Header -->
+    <div class="third_nav">
+      <div class="container main_navBar">
+        <div class="d-flex justify-content-between align-items-center">
+          <nav class="navbar navbar-expand-lg w-100 p-0">
+            <div class="container-fluid p-0">
+              <button class="categoryBtn" id="sidebarToggle">
+                <i class="fa-solid fa-bars-staggered"></i> ALL CATEGORIES
+              </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-lg-0 navbar-nav-scroll">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">Our Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blogs.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <!-- Black Friday Link -->
+                <div class="clr">
+                  <a href="#">Black Friday</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar text-white p-3">
+          <button id="closeSidebar"><i class="fa-solid fa-x"></i></button>
+          <h4>All Categories</h4>
+          <ul class="p-0">
+            <li><a class="" href="#">Bike Parts</a></li>
+            <li><a class="" href="#">Car Parts</a></li>
+            <li><a class="" href="#">Truck Parts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top Header & NavBar End -->
+
+  <!-- Forward To Back Linking Start -->
+  <!-- <section class="bottom-links">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="index.html" class="text-muted">Home</a>
+        </li>
+        <li><i class="fa-solid fa-left-right"></i></li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+  <!-- Forward To Back Linking End -->
+
+  <!-- Banner Slider & Side Form Starts -->
+  <div id="carouselExampleIndicators">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/images/Background.jpg" class="d-block w-100" alt="About Banner">
+        <div class="carousel-caption d-md-block">
+          <h2 class="animate__animated animate__backInLeft pt-lg-5 pt-md-0">Contact Us</h2>
+          <p class="mb-4 banner-para">
+            Autohaus Geiger GmbH offers premium car accessories to elevate your driving experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner Slider & Side Form End -->
+
+  <!-- Contact Us With Using Map Start -->
+  <section class="container contact-section">
+    <div class="contact-info">
+      <div class="contact-content">
+        <h2>
+          We’d Love to Hear From You
+          <span class="outline">and Get Things Rolling!</span>
+        </h2>
+        <p class="contact-description">
+          Welcome to Autohaus Geiger GmbH, your ultimate destination for premium car accessories. As passionate car
+          enthusiasts, we are committed to enhancing every aspect of your driving experience. Our carefully curated
+          range of accessories combines top-notch functionality, sophisticated aesthetics, and unmatched durability,
+          ensuring that your vehicle not only performs at its best but also stands out in style. Explore our collection
+          and let us help you take your driving journey to the next level.
+        </p>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a href="tel:"><span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              (000) 000-000</a>
+          </li>
+          <li class="contact-item">
+            <a href="mailto:"><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              lorem000@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <a href="#"><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="map">
+      <iframe id="gmap_canvas"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.415219349441!2d9.128765075466639!3d48.88842349859382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d125b70b4e11%3A0x7b0b54c3b50dfb1b!2sLudwigsburger%20Str.%2035%2C%2071696%20M%C3%B6glingen%2C%20Germany!5e0!3m2!1sen!2s!4v1731910541435!5m2!1sen!2s"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+  </section>
+  <!-- Contact Us With Using Map End -->
+
+  <!-- Contact Form Starts Here -->
+  <div class="container contact_form p-2">
+    <div class="contact_info">
+      <h1>Contact Information</h1>
+      <p>Say something to start a live chat!</p>
+      <div class="number_mailAddress">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i><a href="tel:">(000) 000-0000</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i><a href="mailto:">lorem000@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_links">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="form-container">
+      <form>
+        <div class="merge">
+          <div class="input-container">
+            <input type="text" id="first-name" name="first-name" required />
+            <label for="first-name" class="placeholder">First Name</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="last-name" name="last-name" required />
+            <label for="last-name" class="placeholder">Last Name</label>
+          </div>
+        </div>
+        <div class="merge">
+          <div class="input-container">
+            <input type="email" id="email" name="email" required />
+            <label for="email" class="placeholder">Email</label>
+          </div>
+          <div class="input-container">
+            <input type="tel" id="phone-number" name="phone-number" required />
+            <label for="phone-number" class="placeholder">Phone Number</label>
+          </div>
+        </div>
+        <div class="input-container">
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message" class="placeholder">Message</label>
+        </div>
+        <a href="#" class="wrapperBtnM"><span>Send Message</span></a>
+      </form>
+    </div>
+  </div>
+  <!-- Contact Form End Here -->
+
+  <!-- Customer Reviews Start -->
+  <section class="customer-reviews mb-5">
+    <div class="container my-2">
+      <p class="para-title">HELPS YOU TO FIND PERFECT CAR</p>
+      <h2 class="heading-title">Customer Reviews</h2>
+      <img class="img-sign" src="./assets/images/reviews-img.png" alt="Reviews Sign" />
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Sam Jack</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer1.png" alt="Customer 1" />
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Tom Aldahn</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer2.png" alt="Customer 2" />
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Kelly Mulvihill</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer3.png" alt="Customer 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Sam Jack</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer1.png" alt="Customer 1" />
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Tom Aldahn</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer2.png" alt="Customer 2" />
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="review-card">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+                <div class="customer-info">
+                  <div>
+                    <h5>Kelly Mulvihill</h5>
+                    <p>Customer</p>
+                  </div>
+                  <img src="./assets/images/customer3.png" alt="Customer 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Customer Reviews End -->
+
+  <!-- Footer Section Start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center text-md-start mb-4">
+          <div class="logo">
+            <img src="./assets/images/footer-logo.png" alt="Logo">
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6>Quick link</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About</a></li>
+            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html" class="text-white">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6>Contact us</h6>
+          <ul class="list-unstyled contact-info">
+            <li><i class="fa-solid fa-phone"></i><a href="#">(111) 111-1111</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="#">info@loremipsum.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="#">Lorem Ipsum is simply dummy text</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6>Subscribe</h6>
+          <form action="" method="" class="subscribe">
+            <input type="text" class="form-control mb-3" placeholder="Name">
+            <input type="email" class="form-control mb-4" placeholder="Email">
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">
+            Copyright© 2024 Autohaus. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SiderBar Open & Close JS Start-->
+  <script>
+    document
+      .getElementById("sidebarToggle")
+      .addEventListener("click", function () {
+        document.getElementById("sidebar").classList.toggle("open");
+      });
+
+    document
+      .getElementById("closeSidebar")
+      .addEventListener("click", function () {
+        document.getElementById("sidebar").classList.remove("open");
+      });
+  </script>
+  <!-- SiderBar Open & Close JS End -->
+
+  <!-- Featured Products Slider JS Start -->
+  <script>
+    // JavaScript function to initialize an infinite slider
+    function initializeSlider(sliderId) {
+      const sliderWrapper = document.querySelector(
+        `#${sliderId} .slider-wrapper`
+      );
+      const productCards = Array.from(
+        document.querySelectorAll(`#${sliderId} .product-card`)
+      );
+      const totalCards = productCards.length;
+      const cardWidth = productCards[0].clientWidth + 16; // Including margin
+      let currentIndex = 0;
+
+      // Duplicate cards only if they're not already duplicated
+      if (sliderWrapper.childElementCount === totalCards) {
+        productCards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          sliderWrapper.appendChild(clone);
+        });
+      }
+
+      // Set initial position
+      sliderWrapper.style.transform = `translateX(0px)`;
+
+      function slide(next = true) {
+        currentIndex += next ? 1 : -1;
+        sliderWrapper.style.transition = "transform 0.5s ease";
+        sliderWrapper.style.transform = `translateX(${-currentIndex * cardWidth
+          }px)`;
+
+        // Infinite loop handling
+        if (currentIndex >= totalCards) {
+          setTimeout(() => {
+            sliderWrapper.style.transition = "none";
+            currentIndex = 0;
+            sliderWrapper.style.transform = `translateX(0px)`;
+          }, 500);
+        } else if (currentIndex < 0) {
+          setTimeout(() => {
+            sliderWrapper.style.transition = "none";
+            currentIndex = totalCards - 1;
+            sliderWrapper.style.transform = `translateX(${-currentIndex * cardWidth
+              }px)`;
+          }, 500);
+        }
+      }
+
+      // Start auto-slide
+      setInterval(() => slide(true), 3000);
+
+      // Navigation buttons
+      document
+        .querySelector(`#${sliderId} #next-btn`)
+        .addEventListener("click", () => slide(true));
+      document
+        .querySelector(`#${sliderId} #prev-btn`)
+        .addEventListener("click", () => slide(false));
+    }
+
+    // Initialize sliders
+    initializeSlider("featured-slider-1");
+    initializeSlider("featured-slider-2");
+  </script>
+  <!-- Featured Products Slider JS End -->
+
+  <!--New Google Transalater Code Start-->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en,ur",
+          includedLanguages: "en,ur",
+          autoDisplay: true,
+        },
+        "google_translate_element"
+      );
+
+      setTimeout(function () {
+        var select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = "en,ur";
+          select.dispatchEvent(new Event("change"));
+        }
+      }, 1000); // Delay to ensure the Translate element is fully loaded
+    }
+
+    function loadGoogleTranslate() {
+      var googleTranslateScript = document.createElement("script");
+      googleTranslateScript.type = "text/javascript";
+      googleTranslateScript.src =
+        "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.head.appendChild(googleTranslateScript);
+    }
+
+    // Load Google Translate
+    loadGoogleTranslate();
+  </script>
+  <!--New Google Transalater Code End-->
+
+  <!-- Back To Top Js Start -->
+  <script>
+    var btn = $("#button");
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass("show");
+      } else {
+        btn.removeClass("show");
+      }
+    });
+
+    btn.on("click", function (e) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "300");
+    });
+  </script>
+  <!-- Back To Top Js End -->
+</body>
+
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autohaus Geiger</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+    <!-- Bottom To Top -->
+    <a id="button">
+        <img src="./assets/images/car.png" alt="Back To Top">
+    </a>
+    <!-- Bottom To Top -->
+
+    <!-- Top Header & NavBar Starts -->
+    <section class="header_container">
+        <!-- Top First Header -->
+        <div class="first_nav">
+            <div class="container top-header d-flex align-items-baseline justify-content-between flex-wrap">
+                <div class="converter d-flex align-items-baseline col-xl-4 col-lg-4 col-md-3 col-12">
+                    <div id="google_translate_element"></div>
+                    |
+                    <div class="">
+                        <select name="" id="">
+                            <option value="usd">USD</option>
+                            <option value="eur">ERU</option>
+                        </select>
+                    </div>
+                </div>
+                <div
+                    class="social_links d-flex align-items-baseline justify-content-center col-xl-4 col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div
+                    class="search_account d-flex align-items-baseline justify-content-end col-xl-4 col-lg-4 col-md-5 col-12">
+                    <div class="searchDiv">
+                        <form action="" method="">
+                            <label for="search_icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            <input type="search" name="search" id="search_icon" placeholder="SEARCH..." />
+                        </form>
+                    </div>
+                    |
+                    <div class="account">
+                        <select name="" id="">
+                            <option value="">My Account</option>
+                            <option value="">Wish List</option>
+                            <option value="">Checkout</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 mb-3" />
+        <!-- Top Second Header -->
+        <div class="container mb-2 second_header d-flex align-items-start justify-content-between">
+            <div class="col-xl-2 col-lg-2 col-4 logo-section">
+                <img src="./assets/images/logo.png" alt="Autohaus Logo">
+            </div>
+            <div class="col-xl-9 col-lg-9 col-7 d-flex gap-2 align-items-start justify-content-end">
+                <div class="col-xl-7 col-lg-7 search-bar">
+                    <select name="" id="">
+                        <option>All Category</option>
+                        <option>Category 1</option>
+                        <option>Category 2</option>
+                    </select>
+                    <input type="text" placeholder="Search item...">
+                    <button type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-xl-0 col-lg-0">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Third Header -->
+        <div class="third_nav">
+            <div class="container main_navBar">
+                <div class="d-flex justify-content-between align-items-center">
+                    <nav class="navbar navbar-expand-lg w-100 p-0">
+                        <div class="container-fluid p-0">
+                            <button class="categoryBtn" id="sidebarToggle">
+                                <i class="fa-solid fa-bars-staggered"></i> ALL CATEGORIES
+                            </button>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+                                <ul class="navbar-nav mx-auto my-lg-0 navbar-nav-scroll">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="products.html">Our Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blogs.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                                <!-- Black Friday Link -->
+                                <div class="clr">
+                                    <a href="#">Black Friday</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Sidebar -->
+                <div id="sidebar" class="sidebar text-white p-3">
+                    <button id="closeSidebar"><i class="fa-solid fa-x"></i></button>
+                    <h4>All Categories</h4>
+                    <ul class="p-0">
+                        <li><a class="" href="#">Bike Parts</a></li>
+                        <li><a class="" href="#">Car Parts</a></li>
+                        <li><a class="" href="#">Truck Parts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Header & NavBar End -->
+
+    <!-- Forward To Back Linking Start -->
+    <section class="bottom-links mt-4">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html" class="text-muted">Home</a>
+                </li>
+                <li><i class="fa-solid fa-greater-than"></i></li>
+                <li>
+                    <a href="products.html" class="text-muted">Products</a>
+                </li>
+                <li><i class="fa-solid fa-greater-than"></i></li>
+                <li>
+                    <a href="product-detail.html">Product Detail</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Forward To Back Linking End -->
+
+    <!-- Single Product Detail Start -->
+    <div class="container py-5 product-detail">
+        <div class="row">
+            <!-- Product Gallery Section -->
+            <div class="col-md-6 product-gallery">
+                <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image position-relative">
+                        <img id="mainImage" src="assets/images/featured-product1.png" alt="Product" class="img-fluid">
+                        <div class="magnifier" onclick="openZoom()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <button class="carousel-btn left" onclick="prevImage()"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button class="carousel-btn right" onclick="nextImage()"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-container">
+                        <img src="assets/images/featured-product1.png" alt="Thumbnail 1" onclick="changeImage(this)"
+                            class="active">
+                        <img src="assets/images/featured-product2.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                        <img src="assets/images/featured-product3.png" alt="Thumbnail 3" onclick="changeImage(this)">
+                        <img src="assets/images/featured-product4.png" alt="Thumbnail 4" onclick="changeImage(this)">
+                        <img src="assets/images/featured-product5.png" alt="Thumbnail 5" onclick="changeImage(this)">
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="col-md-6">
+                <h1 class="product-title">Bosch Fuel Ignition 60</h1>
+                <p class="product-rating">
+                    <span>Buyers rating : </span>
+                    <span class="stars">★★★★☆</span>
+                </p>
+
+                <p class="price">
+                    $16.40 <span class="original-price">$20.50</span>
+                </p>
+
+                <p class="discription">The brand offers feminine designs delivering stylish separates.</p>
+                <!-- Color Options -->
+                <p><strong>Available Color : </strong></p>
+                <div class="available-color">
+                    <input type="radio" name="color" id="color1" checked>
+                    <label for="color1">Beige</label>
+                    <input type="radio" name="color" id="color2">
+                    <label for="color2">Black</label>
+                </div>
+                <!-- Size Options -->
+                <p><strong>Available Size : </strong></p>
+                <div class="size-buttons">
+                    <button class="btn btn-outline-secondary">S</button>
+                    <button class="btn btn-outline-secondary">M</button>
+                    <button class="btn btn-outline-secondary">L</button>
+                </div>
+                <!-- Quantity Selector -->
+                <p class="mt-3"><strong>Quantity : </strong></p>
+                <div class="quantity-selector">
+                    <button class="increase-btn">-</button>
+                    <input type="text" value="1">
+                    <button class="decrease-btn">+</button>
+                </div>
+                <!-- Buttons -->
+                <div class="mt-4 d-flex">
+                    <button class="buy-btn me-3"><a href="cart.html">BUY IT NOW</a></button>
+                    <button class="button">
+                        <span>ADD TO CART</span>
+                        <div class="cart">
+                            <svg viewBox="0 0 36 26">
+                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fullscreen Zoom Overlay -->
+        <div id="zoomOverlay" class="zoom-overlay" onclick="closeZoom()">
+            <img id="zoomedImage" src="" alt="Zoomed Product">
+            <span class="close-zoom"><i class="fa-solid fa-x"></i></span>
+        </div>
+    </div>
+    <!-- Single Product Detail End -->
+
+    <!-- Product Discription Start -->
+    <section class="container">
+        <div class="row">
+            <ul class="nav nav-tabs d-flex p-0 align-items-center" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0"
+                        role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Description</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab"
+                        aria-controls="simple-tabpanel-1" aria-selected="false">Product Details</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab"
+                        aria-controls="simple-tabpanel-2" aria-selected="false">Reviews</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="container">
+        <div class="tab-content pt-4" id="tab-content">
+            <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+                <div class="description">
+                    <h3 class="discussion-title">Product Description</h3>
+                    <p>
+                        Fashion has been creating well-designed collections since 2010. The brand offers feminine
+                        designs delivering stylish separates and statement dresses which have since evolved into a full
+                        ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result?
+                        Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the
+                        beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion
+                        extends to a range of accessories including shoes, hats, belts and more!
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                <div class="details">
+                    <h3 class="discussion-title">Product Detail</h3>
+                    <table class="table-specifications">
+                        <tr>
+                            <th><i class="icon-spec fa-solid fa-gear"></i> Feature</th>
+                            <th><i class="icon-spec fa-solid fa-circle-info"></i> Details</th>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>High-Grade Steel and Composite</td>
+                        </tr>
+                        <tr>
+                            <td>Compatibility</td>
+                            <td>Suitable for most cars, bikes, and trucks</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>2.5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>15 cm x 20 cm x 10 cm</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>1 Year Manufacturer Warranty</td>
+                        </tr>
+                        <tr>
+                            <td>Country of Origin</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Black, Silver</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">
+                <div class="discussion-container">
+                    <h3 class="discussion-title">Product Review</h3>
+                    <!-- Review 1 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-user">
+                                <img src="assets/images/customer1.png" alt="User Avatar" class="user-avatar">
+                                <div>
+                                    <p class="user-name">Kathryn Murphy</p>
+                                    <span class="review-time">2 weeks ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">This fit is perfect, and the quality is top-notch.</p>
+                        <div class="review-actions">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                            <a href="#">3 replies</a>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-user">
+                                <img src="assets/images/customer2.png" alt="User Avatar" class="user-avatar">
+                                <div>
+                                    <p class="user-name">Esther Howard</p>
+                                    <span class="review-time">1 week ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">I recently purchased the gray blazer jacket for women, and I couldn’t be
+                            happier with my purchase!</p>
+                        <a href="#" class="show-hide-replies">Hide replies</a>
+
+                        <!-- Reply 1 -->
+                        <div class="reply-container">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="assets/images/customer3.png" alt="User Avatar" class="user-avatar">
+                                    <div>
+                                        <p class="user-name">Cameron Williamson</p>
+                                        <span class="review-time">1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">I've owned multiple cardigans and this one is the best.</p>
+                            <div class="review-actions">
+                                <a href="#">Like</a>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+
+                        <!-- Reply 2 -->
+                        <div class="reply-container">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="assets/images/customer1.png" alt="User Avatar" class="user-avatar">
+                                    <div>
+                                        <p class="user-name">Jenny Wilson</p>
+                                        <span class="review-time">1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">It was versatile enough to wear to work or dress up for a night out.
+                            </p>
+                            <div class="review-actions">
+                                <a href="#">Like</a>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-user">
+                                <img src="assets/images/customer3.png" alt="User Avatar" class="user-avatar">
+                                <div>
+                                    <p class="user-name">Kristin Watson</p>
+                                    <span class="review-time">2 weeks ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">I highly recommend this item to anyone looking for a timeless classic to
+                            add to their wardrobe.</p>
+                        <div class="review-actions">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Discription End -->
+
+    <!-- Featured Products Slider Start -->
+    <div class="container feature-product" id="featured-slider-1">
+        <div class="slider-heading d-flex justify-content-between align-items-center">
+            <h2 class="mb-4">You Might <span>Also Like</span></h2>
+            <div class="slider-navigation">
+                <button class="slider-btn" id="prev-btn">&larr;</button>
+                <button class="slider-btn" id="next-btn">&rarr;</button>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="product-card text-center">
+                    <div class="sale-badge">Sale !</div>
+                    <img src="./assets/images/featured-product1.png" alt="Product 1" class="img-fluid">
+                    <hr />
+                    <h5>Engine Maintenance Kit</h5>
+                    <p>$3,641.00</p>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+                <div class="product-card text-center">
+                    <img src="./assets/images/featured-product2.png" alt="Product 2" class="img-fluid">
+                    <hr />
+                    <h5>Engine Maintenance Kit</h5>
+                    <p>$3,641.00</p>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+                <div class="product-card text-center">
+                    <img src="./assets/images/featured-product3.png" alt="Product 3" class="img-fluid">
+                    <hr />
+                    <h5>Engine Maintenance Kit</h5>
+                    <p>$3,641.00</p>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+                <div class="product-card text-center">
+                    <img src="./assets/images/featured-product4.png" alt="Product 4" class="img-fluid">
+                    <hr />
+                    <h5>Engine Maintenance Kit</h5>
+                    <p>$3,641.00</p>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Products Slider End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center text-md-start mb-4">
+                    <div class="logo">
+                        <img src="./assets/images/footer-logo.png" alt="Logo">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Quick link</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact us</h6>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="fa-solid fa-phone"></i><a href="#">(111) 111-1111</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="#">info@loremipsum.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="#">Lorem Ipsum is simply dummy text</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Subscribe</h6>
+                    <form action="" method="" class="subscribe">
+                        <input type="text" class="form-control mb-3" placeholder="Name">
+                        <input type="email" class="form-control mb-4" placeholder="Email">
+                        <button type="submit" class="btn btn-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        Copyright© 2024 Autohaus. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SiderBar Open & Close JS Start-->
+    <script>
+        document.getElementById("sidebarToggle").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.toggle("open");
+        });
+
+        document.getElementById("closeSidebar").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("open");
+        });
+    </script>
+    <!-- SiderBar Open & Close JS End -->
+
+    <!-- Featured Products Slider JS Start -->
+    <script>
+        // JavaScript function to initialize an infinite slider
+        function initializeSlider(sliderId) {
+            const sliderWrapper = document.querySelector(`#${sliderId} .slider-wrapper`);
+            const productCards = Array.from(document.querySelectorAll(`#${sliderId} .product-card`));
+            const totalCards = productCards.length;
+            const cardWidth = productCards[0].clientWidth + 16; // Including margin
+            let currentIndex = 0;
+
+            // Duplicate cards only if they're not already duplicated
+            if (sliderWrapper.childElementCount === totalCards) {
+                productCards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    sliderWrapper.appendChild(clone);
+                });
+            }
+
+            // Set initial position
+            sliderWrapper.style.transform = `translateX(0px)`;
+
+            function slide(next = true) {
+                currentIndex += next ? 1 : -1;
+                sliderWrapper.style.transition = 'transform 0.5s ease';
+                sliderWrapper.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+
+                // Infinite loop handling
+                if (currentIndex >= totalCards) {
+                    setTimeout(() => {
+                        sliderWrapper.style.transition = 'none';
+                        currentIndex = 0;
+                        sliderWrapper.style.transform = `translateX(0px)`;
+                    }, 500);
+                } else if (currentIndex < 0) {
+                    setTimeout(() => {
+                        sliderWrapper.style.transition = 'none';
+                        currentIndex = totalCards - 1;
+                        sliderWrapper.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+                    }, 500);
+                }
+            }
+
+            // Start auto-slide
+            setInterval(() => slide(true), 3000);
+
+            // Navigation buttons
+            document.querySelector(`#${sliderId} #next-btn`).addEventListener('click', () => slide(true));
+            document.querySelector(`#${sliderId} #prev-btn`).addEventListener('click', () => slide(false));
+        }
+
+        // Initialize sliders
+        initializeSlider('featured-slider-1');
+        initializeSlider('featured-slider-2');
+    </script>
+    <!-- Featured Products Slider JS End -->
+
+    <!--New Google Transalater Code Start-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en,ur',
+                includedLanguages: 'en,ur',
+                autoDisplay: true
+            }, 'google_translate_element');
+
+            setTimeout(function () {
+                var select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = 'en,ur';
+                    select.dispatchEvent(new Event('change'));
+                }
+            }, 1000); // Delay to ensure the Translate element is fully loaded
+        }
+
+        function loadGoogleTranslate() {
+            var googleTranslateScript = document.createElement('script');
+            googleTranslateScript.type = 'text/javascript';
+            googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            document.head.appendChild(googleTranslateScript);
+        }
+
+        // Load Google Translate
+        loadGoogleTranslate();
+    </script>
+    <!--New Google Transalater Code End-->
+
+    <!-- Back To Top Js Start -->
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+    <!-- Back To Top Js End -->
+
+    <!-- Add To Cart Button Js Start -->
+    <script>
+        document.querySelectorAll(".button").forEach((button) =>
+            button.addEventListener("click", (e) => {
+                if (!button.classList.contains("loading")) {
+                    button.classList.add("loading");
+                    setTimeout(() => button.classList.remove("loading"), 3700);
+                }
+                e.preventDefault();
+            })
+        );
+    </script>
+    <!-- Add To Cart Button Js End -->
+
+    <!-- Products Image Gallery Js Start -->
+    <script>
+        const mainImage = document.getElementById("mainImage");
+        const thumbnails = document.querySelectorAll(".thumbnail-container img");
+        const zoomOverlay = document.getElementById("zoomOverlay");
+        const zoomedImage = document.getElementById("zoomedImage");
+
+        let currentIndex = 0;
+
+        // Change the main image on thumbnail click
+        function changeImage(thumbnail) {
+            mainImage.src = thumbnail.src;
+            thumbnails.forEach((img) => img.classList.remove("active"));
+            thumbnail.classList.add("active");
+        }
+
+        // Navigate to the previous image
+        function prevImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                mainImage.src = thumbnails[currentIndex].src;
+                updateActiveThumbnail();
+            }
+        }
+
+        // Navigate to the next image
+        function nextImage() {
+            if (currentIndex < thumbnails.length - 1) {
+                currentIndex++;
+                mainImage.src = thumbnails[currentIndex].src;
+                updateActiveThumbnail();
+            }
+        }
+
+        // Update active thumbnail styling
+        function updateActiveThumbnail() {
+            thumbnails.forEach((img) => img.classList.remove("active"));
+            thumbnails[currentIndex].classList.add("active");
+        }
+
+        // Open zoom overlay
+        function openZoom() {
+            zoomedImage.src = mainImage.src;
+            zoomOverlay.style.display = "flex";
+        }
+
+        // Close zoom overlay
+        function closeZoom() {
+            zoomOverlay.style.display = "none";
+        }
+
+    </script>
+    <!-- Products Image Gallery Js End -->
+
+</body>
+
+</html>
